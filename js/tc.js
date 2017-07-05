@@ -23,7 +23,7 @@ $('.ro').hover(
 
 $("#mv a").click(function(){
 	var result = $(this).attr("href").match(/v=([^&]+)&/);
-	var urlstr = "http://www.youtube.com/embed/" + result[1] + "?rel=0&amp;hd=1&amp;vq=hd720&amp;autohide=1&amp;iv_load_policy=3";
+	var urlstr = "http://www.youtube.com/embed/" + result[1] + "?rel=0&amp;hd=1&amp;vq=hd720&amp;autohide=1; iv_load_policy=3";
 	var htmlstr ='<iframe width="640" height="360" src="' + urlstr + '" frameborder="0" allowfullscreen></iframe>'
 	$.colorbox({
 		html: htmlstr,
